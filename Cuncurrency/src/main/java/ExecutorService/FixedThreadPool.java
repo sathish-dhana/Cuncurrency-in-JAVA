@@ -1,9 +1,11 @@
-package FixedThreadPool;
+package ExecutorService;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class FixedThreadPool {
+
+    /*FixedThreadPool internally uses blocking queue (thread safe queue)*/
 
     /*this we need to use for cpu intensive operation (creating hash function, creating come algorithm)
     * if we have four core processor this will create only 4 threads
